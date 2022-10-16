@@ -53,6 +53,8 @@ spark_job = SparkSubmitOperator(
         'spark.master': spark_master,
         'spark.driver.bindAddress': '0.0.0.0',
         'spark.driver.host': SPARK_DRIVER_HOST,
+        'spark.dynamicAllocation.enabled': 'false',
+        'spark.shuffle.service.enabled': 'false',
         # 'spark.driver.port': 7000,
         'spark.submit.deployMode': 'client',
         'spark.ui.showConsoleProgress': 'true'
