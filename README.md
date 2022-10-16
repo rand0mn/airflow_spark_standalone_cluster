@@ -1,6 +1,6 @@
 # airflow_spark_standalone_cluster
-docker-compose build
-docker-compose up -d
+1. docker-compose build
+2. docker-compose up -d
 
-airflow: http://localhost:8080/  airflow/airflow
-spark master: http://localhost:8181/
+* airflow: http://localhost:8080/  airflow/airflow
+* spark master: http://localhost:8181/
